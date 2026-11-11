@@ -51,6 +51,9 @@ esp_err_t new_nhd_rgb_panel(esp_lcd_panel_handle_t *nhd_handle) {
             .vsync_back_porch = LCD_VBP,
             .vsync_front_porch = LCD_VFP, 
             .vsync_pulse_width = LCD_VSYNC,
+            .flags = {
+                .pclk_active_neg = true 
+            }
         },
         .flags.fb_in_psram = true, /* allocate frame buffer from PSRAM */
     };

@@ -5,7 +5,7 @@
 #include "esp_lcd_panel_rgb.h"
 
 #if CONFIG_PANEL_DISPLAY_1
-#define LCD_PIXEL_CLOCK_HZ (25 * 1000 * 1000)
+#define LCD_PIXEL_CLOCK_HZ (23 * 1000 * 1000)
 #define LCD_H_RES 800
 #define LCD_V_RES 480
 #define LCD_HSYNC 4
@@ -15,7 +15,15 @@
 #define LCD_VBP 8 
 #define LCD_VFP 8 
 #elif CONFIG_PANEL_DISPLAY_2
-
+#define LCD_PIXEL_CLOCK_HZ ((20 * 1000 * 1000))
+#define LCD_H_RES 800
+#define LCD_V_RES 480
+#define LCD_HSYNC 4
+#define LCD_HBP 8
+#define LCD_HFP 8
+#define LCD_VSYNC 4
+#define LCD_VBP 16 
+#define LCD_VFP 16 
 #endif 
 
 /**
