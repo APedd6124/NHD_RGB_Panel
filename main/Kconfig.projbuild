@@ -1,0 +1,14 @@
+menu "Display Configurtion"
+
+    choice PANEL_MODEL
+        prompt "NHD RGB panel"
+        default PANEL_DISPLAY_1
+
+        config PANEL_DISPLAY_1 
+            bool "NHD-5.0-800480AF-ASXP"
+
+        config PANEL_DISPLAY_2
+            bool "NHD-7.0-800480AF-ASXP"
+    endchoice
+
+endmenu
